@@ -5,7 +5,7 @@
     function getDayFromDate (date = new Date()) {
         let start = new Date(date.getFullYear(), 0, 0);
         let diff = date - start;
-        return Math.ceil(diff / ONE_DAY_MS);
+        return Math.floor(diff / ONE_DAY_MS);
     }
 
     document.getElementById('dayContainer').innerText = getDayFromDate(now);
