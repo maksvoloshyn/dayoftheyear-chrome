@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    padding: 10px;
+}
+
+.today-container {
+    text-align: center;
+}
+
+.number {
+    font-size: 8em;
+}
+
+.number-label {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.year-label {
+    font-size: 1em;
+}
