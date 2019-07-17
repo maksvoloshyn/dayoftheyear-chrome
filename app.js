@@ -1,10 +1,11 @@
 {
     const ONE_DAY_MS = 1000 * 60 * 60 * 24;
-    let now = new Date();
+    const now = new Date();
 
-    function getDayFromDate (date = new Date()) {
-        let start = new Date(date.getFullYear(), 0, 0);
-        let diff = date - start;
+    function getDayFromDate(date) {
+        const start = new Date(date.getFullYear(), 0, 0);
+        const diff = date - start;
+
         return Math.floor(diff / ONE_DAY_MS);
     }
 
